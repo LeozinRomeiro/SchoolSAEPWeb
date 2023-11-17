@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SchoolSAEP.Data;
 using SchoolSAEP.Models;
-using SchoolSAEP.ViewsModels;
+using SchoolSAEP.ViewModels;
 
 namespace SchoolSAEP.Controllers
 {
@@ -51,7 +51,7 @@ namespace SchoolSAEP.Controllers
         {
             var viewModel = new Turma
             {
-                Professores = _context.Professor.Select(p => new SelectListItem
+                Professores = _context.Users.Select(p => new SelectListItem
                 {
                     Value = p.Id.ToString(),
                     Text = p.Nome

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace SchoolSAEP.ViewsModels
+namespace SchoolSAEP.ViewModels
 {
     public class TurmaViewModel
     {

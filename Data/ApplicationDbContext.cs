@@ -11,7 +11,6 @@ namespace SchoolSAEP.Data
             : base(options)
         {
         }
-        public DbSet<SchoolSAEP.Models.Professor> Professor { get; set; } = default!;
         public DbSet<SchoolSAEP.Models.Turma> Turma { get; set; } = default!;
         public DbSet<SchoolSAEP.Models.Atividade> Atividade { get; set; } = default!;
 
